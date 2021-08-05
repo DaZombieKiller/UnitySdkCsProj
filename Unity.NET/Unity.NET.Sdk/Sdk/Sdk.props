@@ -1,0 +1,13 @@
+<Project>
+    <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+    <PropertyGroup>
+        <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+        <GenerateDependencyFile>False</GenerateDependencyFile>
+        <EditorAssembly>False</EditorAssembly>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Unity.NET.Engine" Version="1.0.0" />
+    </ItemGroup>
+</Project>

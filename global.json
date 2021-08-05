@@ -1,0 +1,5 @@
+{
+    "msbuild-sdks": {
+        "Unity.NET.Sdk": "1.0.0"
+    }
+}

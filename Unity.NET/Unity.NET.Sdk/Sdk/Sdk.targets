@@ -1,0 +1,16 @@
+<Project>
+    <PropertyGroup Condition="'$(OutDir)' == ''">
+        <OutDir>$(UnityProjectDirectory)Assets\Managed</OutDir>
+        <OutDir Condition="$(EditorAssembly)">$(OutDir)\Editor</OutDir>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="$(EditorAssembly)">
+        <DefineConstants>$(DefineConstants);UNITY_EDITOR</DefineConstants>
+    </PropertyGroup>
+
+    <ItemGroup Condition="$(EditorAssembly)">
+        <PackageReference Include="Unity.NET.Editor" Version="1.0.0" />
+    </ItemGroup>
+
+    <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+</Project>
